@@ -10,7 +10,7 @@ VCF_file <- read.table(pipe("grep -v '^##' Challenge_data.vcf | sed s/^#//"),str
 
 tempus_VCF_analysis <- VAT(VCF_file)
 
-#First run VAT fucntion and require packages
+#First run VAT function and require packages
 
 VAT <- function(VCF_file){
   
