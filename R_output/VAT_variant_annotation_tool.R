@@ -8,7 +8,7 @@ require(plyr)
 
 VCF_file <- read.table(pipe("grep -v '^##' Challenge_data.vcf | sed s/^#//"),stringsAsFactors=F,header=T,sep="\t")
 
-tempus_VCF_analysis <- VAT(VCF_file)
+VCF_analysis_file <- VAT(VCF_file)
 
 #First run VAT function and require packages
 
